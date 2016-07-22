@@ -1,0 +1,24 @@
+## Java
+*.class
+*.war
+*.ear
+hs_err_pid*
+
+## IntelliJ
+.idea/
+*.ipr
+*.iws
+*.iml
+*.so
+out/
+com_crashlytics_export_strings.xml
+
+## Gradle
+.gradle
+gradle-app.setting
+build/
+
+## OS-specific, others
+.DS_Store
+TODO
+
