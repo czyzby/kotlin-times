@@ -1,0 +1,21 @@
+<HTML>
+<HEAD>
+<title>times - kotlin-times</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">kotlin-times</a>&nbsp;/&nbsp;<a href="../index.html">kt.times</a>&nbsp;/&nbsp;<a href="index.html">kotlin.Short</a>&nbsp;/&nbsp;<a href=".">times</a><br/>
+<br/>
+<h1>times</h1>
+<a name="kt.times$times(kotlin.Short, kotlin.Function1((kotlin.Short, kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">operator</span> <span class="keyword">infix</span> <span class="keyword">fun </span><span class="identifier">Short</span><span class="symbol">.</span><span class="identifier">times</span><span class="symbol">(</span><span class="identifier" id="kt.times$times(kotlin.Short, kotlin.Function1((kotlin.Short, kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">Short</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Unit</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Allows to repeat an action N times, where N is a <a href="#">Short</a> value on which this method is invoked. Since this method is
+marked as inline, there should be no runtime overhead of using this method over simple range iteration (or its Java
+for-loop equivalent, for that matter).</p>
+<h3>Parameters</h3>
+
+<p><a name="action"></a>
+<code>action</code> - its invocations amount will be equal to this <a href="#">Short</a> value. If the value is 0 or negative, this action
+will not be invoked. It consumes current iteration index, starting from 0 and ending with (value-1).
+</BODY>
+</HTML>
