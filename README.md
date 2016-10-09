@@ -176,6 +176,7 @@ I pity maintainers of your code if you do this, but I have got to admit it looks
 repeat(n) { i ->
   // Do something.
 }
+```
 *...Um, wait, is this library actually necessary?*
 
 ## How do I include this beauty in my project?
