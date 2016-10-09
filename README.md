@@ -143,7 +143,18 @@ for(i in 1..n) {
 Awkward if you need iteration indexes to start with 0.
 
 ```Kotlin
+for(i in 0 until n) {
+  // Do something.
+}
+```
+Verbose. Ish.
+
+```Kotlin
 (0..n-1).forEach { i ->
+  // Do something.
+}
+
+(0 until n).forEach { i ->
   // Do something.
 }
 ```
@@ -160,7 +171,12 @@ inline operator fun IntRange.invoke(action: (Int) -> Unit) {
 }
 ```
 I pity maintainers of your code if you do this, but I have got to admit it looks unsettlingly tempting.
-       
+
+```Kotlin
+repeat(n) { i ->
+  // Do something.
+}
+*...Um, wait, is this library actually necessary?*
 
 ## How do I include this beauty in my project?
 
